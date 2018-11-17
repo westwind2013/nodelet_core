@@ -35,7 +35,8 @@ include_directories(
   include
   ${catkin_INCLUDE_DIRS}
   ${BOOST_INCLUDE_DIRS}
-  ${UUID_INCLUDE_DIRS})
+  ${UUID_INCLUDE_DIRS}
+  "-std=c++11")
 
 # Debug only, collects stats on how callbacks are doled out to worker threads
 #add_definitions(-DNODELET_QUEUE_DEBUG)
